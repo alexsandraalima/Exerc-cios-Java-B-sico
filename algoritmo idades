@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class teste{
+    public static void main(String[] args) {
+        
+        Scanner scanner=new Scanner(System.in);
+
+        int anos,meses, dias, totalDias;
+
+        System.out.println("Quantos anos você tem?");
+        anos=scanner.nextInt();
+
+        System.out.println("quantos meses se passaram desde que você completou essa idade?");
+        meses=scanner.nextInt();
+
+        System.out.println("Quantos dias se passaram desde o ultimo mêsversario?");
+        dias=scanner.nextInt();
+
+
+        totalDias=(anos*365)+(meses*30)+dias;
+
+        System.out.println("Você já viveu "+totalDias+" dias!");
+
+
+        
+    }
+}
