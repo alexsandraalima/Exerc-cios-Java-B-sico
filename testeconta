@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+
+public class testeconta{
+
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+
+    Double saldo, saldoReajustado;
+
+    System.out.println("imprima o saldo da conta");
+    saldo =scanner.nextDouble();
+    //800,00
+
+    saldoReajustado= saldo * 1.01;
+    //808,00
+
+    System.out.println("o saldo com reauste de 1% é "+saldoReajustado);
+        
+    }
+    
+
+    
+}
