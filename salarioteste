@@ -1,0 +1,32 @@
+
+import java.util.Scanner;
+
+public class salarioTeste {
+    
+public static void main(String[] args) {
+
+    Scanner scanner= new Scanner(System.in);
+    
+    double salarioMinimo, salarioDoUsuario, qtdSalariosMinimos;
+	
+
+    System.out.println("Digite o valor do salário mínimo: ");
+	salarioMinimo = scanner.nextDouble();
+	// valor do salario minímo 1.212,00
+	
+	System.out.println("Digite o salario do usuario: ");
+	salarioDoUsuario = scanner.nextDouble();
+	//salario do usuario 788.
+	
+	// a diferença do salario minimo para o salrio do usuario é 424,00.
+	qtdSalariosMinimos = salarioDoUsuario / salarioMinimo;
+	
+	if (salarioDoUsuario > salarioMinimo) {
+		System.out.println((int) qtdSalariosMinimos + "SM=R$" + (salarioDoUsuario- salarioMinimo));
+	} else {
+		System.out.println("Faltam R$" + ((salarioDoUsuario - salarioMinimo) * -1) + " reais para você alcançar o salário mínimo");
+	}
+    
+}
+
+}
