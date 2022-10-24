@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class media{
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            double score1, score2, score3, media1;
+   
+            System.out.println(" informe a primeira nota av1: ");
+             score1=scanner.nextDouble();
+   
+   
+            System.out.println(" informe a segunda nota av1: ");
+            score2=scanner.nextDouble();
+   
+            System.out.println(" informe a terceira nota av1: ");
+            score3=scanner.nextDouble();
+
+            media1=(score1+ score2+ score3)/3;
+
+
+            System.out.println("A média das notas de av1 é: "+media1);
+
+
+            double score4, score5,score6, media2, notaFinal;
+
+            System.out.println("informe a primeira nota av2: ");
+            score4=scanner.nextDouble();
+
+            System.out.println("informe a segunda nota da av2: ");
+            score5=scanner.nextDouble();
+
+            System.out.println("informe a terceira nota da av2: ");
+            score6=scanner.nextDouble();
+
+            media2=(score4+score5+score6)/3; 
+
+            System.out.println("a média das notas de av2 é: "+ media2);
+
+            notaFinal=(media1+media2)/2;
+
+            System.out.println("a nota final do semestre é: "+notaFinal);
+
+
+
+        }
+    
+    }
+}
