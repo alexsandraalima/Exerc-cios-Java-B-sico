@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class testeNumerosNaturais{
+
+    public static void main(String[] args) {
+        
+        Scanner scanner= new Scanner(System.in);
+
+        int num;
+        int antecessor;
+        int sucessor;
+
+        System.out.println("Escolha um número");
+        num=scanner.nextInt();
+
+        antecessor=num-1;
+        sucessor=num+1;
+
+        System.out.println("O número informado foi "+num);
+
+        System.out.println("O antecessor é "+antecessor);
+        
+        System.out.println("O sucessor é "+sucessor);
+        
+    
+    }
+}
